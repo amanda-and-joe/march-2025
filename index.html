@@ -4,14 +4,33 @@
 		<title>Amanda + Joe</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css?v=5" />
+		<link rel="stylesheet" href="assets/css/main.css?v=2" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
 			<div id="wrapper">
+				<div id="lastname-form">
+				<h3 class="major">Enter your last name</h3>
+				<form method="post" action="#">
+					<div class="fields">
+						<div class="field">
+							<label for="demo-name">Last Name</label>
+							<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+						</div>
+					</div>
+					<ul class="actions">
+						<li><input type="submit" value="Submit" class="primary" /></li>
+					</ul>
+				</form>
+			</div>
+
+		<div id="greeting" class="hidden">
+			<h3 class="inner">Welcome, <span id="user-first-name"></span>!</h3>
+		</div>
 				<!-- Header -->
+				<div id="hiddenheader" class="hidden">
 					<header id="header">
 						<div class="logo">
 							<span class="icon fa-heart"></span>
@@ -37,6 +56,10 @@
 							</ul>
 						</nav>
 					</header>
+				</div>
+
+
+
 
 				<!-- Main -->
 					<div id="main">
@@ -383,6 +406,45 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script>
+			    // Accepted last names and their corresponding first names
+			    const acceptedNames = {
+			        "lastname1": "first name1",
+			        "lastname2": "first name2",
+			        // Add more last names and first names as needed
+			    };
+
+			    document.querySelector('form').addEventListener('submit', function(event) {
+			        event.preventDefault();  // Prevent form from reloading the page
+
+			        // Get the value of the last name input
+			        const lastName = document.querySelector('#demo-name').value.trim();
+
+			        // Check if the last name exists in the accepted names
+			        if (acceptedNames.hasOwnProperty(lastName)) {
+			            const firstName = acceptedNames[lastName];
+
+			            console.log("WHATS UP FIRST NAME")
+			            console.log(firstName)
+
+			            // Remove the hidden class to display the header
+			            document.querySelector('#hiddenheader').classList.remove('hidden');
+
+			            document.querySelector('#greeting').classList.remove('hidden');
+
+			            document.querySelector('#lastname-form').classList.add('hidden');
+
+						// document.querySelector('#user-last-name').textContent = lastName;
+
+						document.querySelector('#user-first-name').textContent = 'joe';
+
+			        } else {
+			            // Optionally, alert the user if the last name is missing
+			            alert('Sorry, you entered an uncrecognized last name.');
+			        }
+			    });
+			</script>
 
 	</body>
 </html>
