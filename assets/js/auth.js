@@ -1,62 +1,62 @@
 // Accepted last names and their corresponding first names
 const fridayInvites = {
-    "test": "test family",
-    "Carle": "Carle Family",
-    "McCawley": "McCawley Clan",
-    "Guilfoil": "Rachel and TJ",
-    "Ferrelli": "Ferrelli Family",
-    "Muftu": "Serra",
-    "Saules": "Amy Rose and Stu",
-    "Paglieri": "La famiglia Paglieri",
-    "Gentile": "Gentile Family",
-    "Marsh": "Brian",
-    "Guilfoil-Marsh": "Rachel and Brian",
-    "Connor": "Mimi and Tim"
+    "carle": "Carle Family",
+    "mccawley": "McCawley Clan",
+    "guilfoil": "Rachel and TJ",
+    "ferrelli": "Ferrelli Family",
+    "muftu": "Serra",
+    "saules": "Amy Rose and Stu",
+    "paglieri": "La famiglia Paglieri",
+    "gentile": "Gentile Family",
+    "marsh": "Brian",
+    "guilfoil-marsh": "Rachel and Brian",
+    "connor": "Mimi and Tim"
 }
 
 const saturdayInvites = {
-    "Alaniz-Cantu": "Caroline and Edgar",
-    "Maretz": "Caroline and Edgar",
-    "Brooks": "Abbe and Colin",
-    "Caputo": "Lauren and Tim",
-    "Fried": "Lauren and Tim",
-    "Clausen": "Judy and Keith",
-    "Durham": "Chris and Woodrow",
-    "Ellis": "Marco and Emma",
-    "Oriella": "Marco and Emma",
-    "Evans": "Anthony and Hannah",
-    "Ferrara": "Anthony and Hannah",
-    "Fitzpatrick": "Fitz and Fitz",
-    "Flaherty": "Jack",
-    "Green": "Shawny",
-    "Hancock": "Meg and Cutler",
-    "Klein": "Meg and Cutler",
-    "Horton": "Joie and Jayna",
-    "Johnson-Hogan": "Devin and Aaron",
-    "Johnson": "Devin and Aaron",
-    "Hogan": "Devin and Aaron",
-    "Spielman": "Devin and Aaron",
-    "Lang": "Tall Julia",
-    "Morris": "Daniel and Jason",
-    "O'Connor": "Shannon",
-    "OConnor": "Shannon",
-    "Park": "Yool",
-    "Richman": "Tess",
-    "Riordan": "Coleman",
-    "St. Pierre": "Kaelie",
-    "St Pierre": "Kaelie",
-    "StPierre": "Kaelie",
-    "Suttlemyre": "Sarah"
+    "alaniz-cantu": "Caroline and Edgar",
+    "alaniz cantu": "Caroline and Edgar",
+    "maretz": "Caroline and Edgar",
+    "brooks": "Abbe and Colin",
+    "caputo": "Lauren and Tim",
+    "fried": "Lauren and Tim",
+    "clausen": "Judy and Keith",
+    "durham": "Chris and Woodrow",
+    "ellis": "Marco and Emma",
+    "oriella": "Marco and Emma",
+    "evans": "Anthony and Hannah",
+    "ferrara": "Anthony and Hannah",
+    "fitzpatrick": "Fitz and Fitz",
+    "flaherty": "Jack",
+    "green": "Shawny",
+    "hancock": "Meg and Cutler",
+    "klein": "Meg and Cutler",
+    "horton": "Joie and Jayna",
+    "johnson-hogan": "Devin and Aaron",
+    "johnson": "Devin and Aaron",
+    "hogan": "Devin and Aaron",
+    "spielman": "Devin and Aaron",
+    "lang": "Tall Julia",
+    "morris": "Daniel and Jason",
+    "o'connor": "Shannon",
+    "oconnor": "Shannon",
+    "park": "Yool",
+    "richman": "Tess",
+    "riordan": "Coleman",
+    "st. Pierre": "Kaelie",
+    "st Pierre": "Kaelie",
+    "stpierre": "Kaelie",
+    "suttlemyre": "Sarah"
 };
 
 const danceInvites = {
-	"Fein": "Jared and Melanie",
-	"Mukherjee": "Alex and Natalie",
-	"Krause": "Alex and Natalie",
-	"Abner": "Morgan and Chris",
-	"Messer": "Morgan and Chris",
-	"Fletcher": "Phoebe",
-	// Melanie
+	"fein": "Jared and Melanie",
+	"mukherjee": "Alex and Natalie",
+	"krause": "Alex and Natalie",
+	"abner": "Morgan and Chris",
+	"messer": "Morgan and Chris",
+	"fletcher": "Phoebe",
+	"burnett": "Jared and Melanie"
 	// high school jax?
 }
 
@@ -64,7 +64,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
     event.preventDefault();  // Prevent form from reloading the page
 
     // Get the value of the last name input
-    const lastName = document.querySelector('#demo-name').value.trim();
+    const lastName = document.querySelector('#demo-name').value.trim().toLowerCase();
 
     // Check if the last name exists in the accepted names
     if (fridayInvites.hasOwnProperty(lastName)) {
