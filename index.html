@@ -4,7 +4,7 @@
 		<title>Amanda + Joe</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css?v=2" />
+		<link rel="stylesheet" href="assets/css/main.css?v=10" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -20,6 +20,7 @@
 							<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
 						</div>
 					</div>
+					<div id="sorry" class="hidden">Sorry, you entered an uncrecognized last name.</div>
 					<ul class="actions">
 						<li><input type="submit" value="Submit" class="primary" /></li>
 					</ul>
@@ -58,47 +59,129 @@
 					</header>
 				</div>
 
-
-
-
 				<!-- Main -->
 					<div id="main">
 							<article id="schedule">
 								<h2 class="major">Schedule</h2>
-								<span class="image main"><img src="images/nb.jpg" alt="" /></span>
-								<p>Festivities will begin around 1pm on Saturday, March 22, 2025 at Beaches Town Center (100 First St, Neptune Beach, FL 32266)</p>
-								<p>We are doing a family-only church service the day before, so there will be no ceremony, just celebrating!</p>
+								<div id="friday" class="hidden">
+									<span class="image main"><img src="images/nb.jpg" alt="" /></span>
+									<p>Festivities will begin around 4pm on Friday, March 21, 2025 at St. John's Catholic Church in Atlantic Beach, FL</p>
+									<h4>Friday</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Location</th>
+													<th>Description</th>
+													<th>Time</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>St. John's Catholic Church</td>
+													<td>Ceremony</td>
+													<td>4:00pm - 5:00pm</td>
+												</tr>
+												<tr>
+													<td>Doro</td>
+													<td>Dinner</td>
+													<td>6:30pm - 10:00pm</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
 
-								<div class="table-wrapper">
-									<table>
-										<thead>
-											<tr>
-												<th>Location</th>
-												<th>Description</th>
-												<th>Time</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>North Beach Fish Camp</td>
-												<td>Cocktail Hour</td>
-												<td>1:00pm - 2:30pm</td>
-											</tr>
-											<tr>
-												<td>AB Kitchen</td>
-												<td>Dinner</td>
-												<td>2:30pm - 5:00pm</td>
-											</tr>
-											<tr>
-												<td>Cobalt Moon Water Studio</td>
-												<td>Dance Party</td>
-												<td>6:00pm</td>
-											</tr>
+									<h4>Saturday</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Location</th>
+													<th>Description</th>
+													<th>Time</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>North Beach Fish Camp</td>
+													<td>Cocktail Hour</td>
+													<td>1:00pm - 2:30pm</td>
+												</tr>
+												<tr>
+													<td>AB Kitchen</td>
+													<td>Dinner</td>
+													<td>2:30pm - 5:00pm</td>
+												</tr>
+												<tr>
+													<td>Cobalt Moon Water Studio</td>
+													<td>Dance Party</td>
+													<td>6:00pm</td>
+												</tr>
 
-										</tbody>
-									</table>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div id="saturday" class="hidden">
+									<span class="image main"><img src="images/nb.jpg" alt="" /></span>
+									<p>Festivities will begin around 1pm on Saturday, March 22, 2025 at Beaches Town Center (100 First St, Neptune Beach, FL 32266)</p>
+									<p>We are doing a family-only church service the day before, so there will be no ceremony, just celebrating!</p>
+
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Location</th>
+													<th>Description</th>
+													<th>Time</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>North Beach Fish Camp</td>
+													<td>Cocktail Hour</td>
+													<td>1:00pm - 2:30pm</td>
+												</tr>
+												<tr>
+													<td>AB Kitchen</td>
+													<td>Dinner</td>
+													<td>2:30pm - 5:00pm</td>
+												</tr>
+												<tr>
+													<td>Cobalt Moon Water Studio</td>
+													<td>Dance Party</td>
+													<td>6:00pm</td>
+												</tr>
+
+											</tbody>
+										</table>
+									</div>
 								</div>
 
+								<div id="dancing" class="hidden">
+									<span class="image main"><img src="images/nb.jpg" alt="" /></span>
+									<p>Festivities will begin at 6pm on Saturday, March 22, 2025 at Cobalt Moon Water Studio</p>
+									<p>There will be a smaller celebration with family and close friends earlier in the day, so there will be no ceremony, just dancing!</p>
+
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Location</th>
+													<th>Description</th>
+													<th>Time</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Cobalt Moon Water Studio</td>
+													<td>Dance Party</td>
+													<td>6:00pm</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
 								<p> Check out <a href="#travel">our travel page for flight suggestions</a>.</p>
 							</article>
 
@@ -115,7 +198,7 @@
 							</article>
 							<article id="lodging">
 								<h2 class="major"> Lodging</h2>
-								<span class="image main"><img src="images/hotel.jpg" alt="" /></span>
+								<span class="image main"><img src="images/mapkey.jpg" alt="" /></span>
 								<h4>Hotels in Walking Distance</h4>
 								<div class="table-wrapper">
 									<table>
@@ -150,7 +233,7 @@
 										</tbody>
 									</table>
 								</div>
-								<p><i>*we highly recommend staying within walking distance, but there are also hotel options in Neptune Beach and Jacksonville Beach that are a short drive away</i></p>
+								<p><i>*we highly recommend staying within walking distance, but there are also hotel options in Jacksonville Beach that are a short drive away</i></p>
 							</article>
 
 						<!-- RSVP -->
@@ -406,45 +489,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
-			<script>
-			    // Accepted last names and their corresponding first names
-			    const acceptedNames = {
-			        "lastname1": "first name1",
-			        "lastname2": "first name2",
-			        // Add more last names and first names as needed
-			    };
-
-			    document.querySelector('form').addEventListener('submit', function(event) {
-			        event.preventDefault();  // Prevent form from reloading the page
-
-			        // Get the value of the last name input
-			        const lastName = document.querySelector('#demo-name').value.trim();
-
-			        // Check if the last name exists in the accepted names
-			        if (acceptedNames.hasOwnProperty(lastName)) {
-			            const firstName = acceptedNames[lastName];
-
-			            console.log("WHATS UP FIRST NAME")
-			            console.log(firstName)
-
-			            // Remove the hidden class to display the header
-			            document.querySelector('#hiddenheader').classList.remove('hidden');
-
-			            document.querySelector('#greeting').classList.remove('hidden');
-
-			            document.querySelector('#lastname-form').classList.add('hidden');
-
-						// document.querySelector('#user-last-name').textContent = lastName;
-
-						document.querySelector('#user-first-name').textContent = 'joe';
-
-			        } else {
-			            // Optionally, alert the user if the last name is missing
-			            alert('Sorry, you entered an uncrecognized last name.');
-			        }
-			    });
-			</script>
+			<script src="assets/js/auth.js?v=10" defer></script>
 
 	</body>
 </html>
