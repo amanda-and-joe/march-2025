@@ -70,6 +70,10 @@ document.querySelector('form').addEventListener('submit', function(event) {
 
     // Check if the last name exists in the accepted names
     if (fridayInvites.hasOwnProperty(lastName)) {
+
+        document.querySelector('#main').classList.remove('hidden');
+
+
         const firstName = fridayInvites[lastName];
 		document.querySelector('#user-first-name').textContent = firstName;
 
@@ -85,6 +89,10 @@ document.querySelector('form').addEventListener('submit', function(event) {
         document.querySelector('#sorry').classList.add('hidden');
 
     } else if (saturdayInvites.hasOwnProperty(lastName)) {
+
+
+        document.querySelector('#main').classList.remove('hidden');
+
     	const firstName = saturdayInvites[lastName];
 
     	if (lastName === "durham") {
@@ -106,6 +114,10 @@ document.querySelector('form').addEventListener('submit', function(event) {
         document.querySelector('#sorry').classList.add('hidden');
 
     } else if (danceInvites.hasOwnProperty(lastName)) {
+
+
+        document.querySelector('#main').classList.remove('hidden');
+
     	const firstName = danceInvites[lastName];
 		document.querySelector('#user-first-name').textContent = firstName;
 
