@@ -46,7 +46,8 @@ const saturdayInvites = {
     "st. Pierre": "Kaelie",
     "st Pierre": "Kaelie",
     "stpierre": "Kaelie",
-    "suttlemyre": "Sarah"
+    "suttlemyre": "Sarah",
+    "smith": "Jesse"
 };
 
 const danceInvites = {
@@ -56,7 +57,8 @@ const danceInvites = {
 	"abner": "Morgan and Chris",
 	"messer": "Morgan and Chris",
 	"fletcher": "Phoebe",
-	"burnett": "Jared and Melanie"
+	"burnett": "Jared and Melanie",
+	"ford": "Eileen"
 	// high school jax?
 }
 
@@ -84,6 +86,12 @@ document.querySelector('form').addEventListener('submit', function(event) {
 
     } else if (saturdayInvites.hasOwnProperty(lastName)) {
     	const firstName = saturdayInvites[lastName];
+
+    	if (lastName === "durham") {
+    		document.querySelector('#donotinvite').classList.remove('hidden');
+    		document.querySelector('#ozzy').classList.remove('hidden');
+    	}
+
 		document.querySelector('#user-first-name').textContent = firstName;
 
         // Remove the hidden class to display the header
@@ -96,6 +104,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
 
         document.querySelector('#lastname-form').classList.add('hidden');
         document.querySelector('#sorry').classList.add('hidden');
+
     } else if (danceInvites.hasOwnProperty(lastName)) {
     	const firstName = danceInvites[lastName];
 		document.querySelector('#user-first-name').textContent = firstName;
