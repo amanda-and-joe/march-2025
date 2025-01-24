@@ -89,7 +89,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
 
     	if (lastName === "durham") {
     		document.querySelector('#donotinvite').classList.remove('hidden');
-    		document.querySelector('#ozzy').classList.remove('hidden');
+    		document.querySelector('#banned').classList.remove('hidden');
     	}
 
 		document.querySelector('#user-first-name').textContent = firstName;
