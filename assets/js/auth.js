@@ -67,9 +67,14 @@ const danceInvites = {
 }
 
 const registry = {
-    "lang": "New Zealand Holstein",
-    "morris": "new Jason"
-}
+    "lang": {
+        "name": "Julia",
+        "gift": "buy us a New Zealand Holstein so we can start our commune",
+    },
+    "morris": {
+        "name": "Daniel",
+        "gift": "honor Jason's legacy by getting us a replacement",
+    }}
 
 document.querySelector('form').addEventListener('submit', function(event) {
     event.preventDefault();  // Prevent form from reloading the page
@@ -110,7 +115,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
     	}
 
         else if (registry.hasOwnProperty(lastName)) {
-            document.querySelector('#selective-registry').textContent = "Except you, "+firstName+". Please buy us a "+registry[lastName]+".";
+            document.querySelector('#selective-registry').textContent = "Except you, "+registry[lastName]['name']+". Please "+registry[lastName]['gift']+". Thank you.";
         }
 
 		document.querySelector('#user-first-name').textContent = firstName;
