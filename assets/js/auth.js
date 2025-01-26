@@ -66,6 +66,11 @@ const danceInvites = {
 	"teems": "Megan and McLean"
 }
 
+const registry = {
+    "lang": "New Zealand Holstein",
+    "morris": "new Jason"
+}
+
 document.querySelector('form').addEventListener('submit', function(event) {
     event.preventDefault();  // Prevent form from reloading the page
 
@@ -104,8 +109,8 @@ document.querySelector('form').addEventListener('submit', function(event) {
     		document.querySelector('#banned').classList.remove('hidden');
     	}
 
-        else if (lastName === "lang") {
-            document.querySelector('#selective-registry').textContent = "Please buy us a new zealand holstein";
+        else if (registry.hasOwnProperty(lastName)) {
+            document.querySelector('#selective-registry').textContent = "Except you, "+firstName+". Please buy us a "+registry[lastName]+".";
         }
 
 		document.querySelector('#user-first-name').textContent = firstName;
