@@ -52,14 +52,18 @@ const saturdayInvites = {
 
 const danceInvites = {
 	"fein": "Jared and Melanie",
+	"burnett": "Jared and Melanie",
 	"mukherjee": "Alex and Natalie",
 	"krause": "Alex and Natalie",
 	"abner": "Morgan and Chris",
 	"messer": "Morgan and Chris",
 	"fletcher": "Phoebe",
-	"burnett": "Jared and Melanie",
-	"ford": "Eileen"
-	// high school jax?
+	"ford": "Eileen",
+	"cook": "Carter",
+	"griffin": "Jonathan",
+	"gregory": "Austin",
+	"waters": "Megan and McLean",
+	"teems": "Megan and McLean"
 }
 
 document.querySelector('form').addEventListener('submit', function(event) {

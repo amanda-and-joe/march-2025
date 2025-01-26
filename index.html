@@ -4,7 +4,7 @@
 		<title>Amanda + Joe</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css?v=16" />
+		<link rel="stylesheet" href="assets/css/main.css?v=18" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -17,7 +17,7 @@
 					<div class="fields">
 						<div class="field">
 							<label for="demo-name">Last Name</label>
-							<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+							<input type="text" name="demo-name" id="demo-name" value="" placeholder="enter last name" />
 						</div>
 					</div>
 					<div id="sorry" class="hidden">Sorry, you entered an uncrecognized last name.</div>
@@ -53,11 +53,14 @@
 								<li><a href="#schedule"><b>Schedule</b></a></li>
 								<li><a href="#travel"><b>Travel</b></a></li>
 								<li><a href="#lodging"><b>Lodging</b></a></li>
-								<li><a href="#rsvp"><b>RSVP</b></a></li>
+								<li><a href="#rsvp"><b>Registry</b></a></li>
 								<li><a href="#recommendations"><b>Recommendations</b></a></li>
-								<!-- <li><a href="#elements">Elements</a></li> -->
 							</ul>
 						</nav>
+
+
+						<a class="button" style='background: mintcream;' href="#rsvp"><b style='color:lightseagreen;'>RSVP</b></a>
+
 					</header>
 				</div>
 
@@ -128,7 +131,7 @@
 								</div>
 								<div id="saturday" class="hidden">
 									<span class="image main"><img src="images/nb.jpg" alt="" /></span>
-									<p>Festivities will begin at 1pm on <b>Saturday, March 22, 2025</b> at Beaches Town Center (100 First St, Neptune Beach, FL 32266)</p>
+									<p>Festivities will begin at 1pm on <b>Saturday, March 22, 2025</b> in the <b><a href="https://maps.app.goo.gl/3XLp4jnVPNJhM7146" target="_blank">Beaches Town Center</a></b>.</p>
 									<p>We are doing a family-only church service the day before, so there will be no ceremony, just celebrating!</p>
 
 									<p>Please dress in <b>Cocktail Attire</b> for all events, and be sure to wear comfortable shoes for Saturday!</p>
@@ -165,9 +168,10 @@
 
 								<div id="dancing" class="hidden">
 									<span class="image main"><img src="images/nb.jpg" alt="" /></span>
-									<p>Festivities will begin at 6pm on <b>Saturday, March 22, 2025</b> at the Cobalt Moon Water Studio in Neptune Beach, FL:<br /> <b>214 Orange St, Neptune Beach, FL 32266 </b></p>
-									<p>There will be a smaller celebration with family and close friends earlier in the day, so there will be no ceremony or seated meal, just dancing, food, and refreshments!</p>
-									<p>Earlier events in the day will finish by 5pm, so there will be a good opportunity to get a drink in town center or meet up with others before the dancing begins.</p>
+									<p>Festivities will begin at 6pm on <b>Saturday, March 22, 2025</b> at the <b><a href="https://maps.app.goo.gl/oCYGpFvYkgLdDfE78" target="_blank">Cobalt Moon Water Studio</a></b></p>
+									<p>There will be a smaller celebration earlier in the day, so there will be no ceremony or seated meal, just dancing and refreshments!</p>
+
+									<p>Earlier events finish at 5pm, so there will be a break for people to meet up in town center before the dancing begins.</p>
 
 									<p>Please dress in <b>Cocktail Attire</b>, and be sure to wear comfortable shoes!</p>
 									<div class="table-wrapper">
@@ -256,9 +260,9 @@
 							</article>
 
 						<!-- Recommendations -->
-							<article id="recommendations">
+							<article id="recommendations" class="hidden">
 								<h2 class="major">Recommendations</h2>
-								<span class="image main"><img src="images/whits.jpg" alt="" /></span>
+								<span class="image main"><img src="images/db.jpg" alt="" /></span>
 								<p>Our favorite spots to eat and drink in town:</p>
 
 								<section>
@@ -441,7 +445,7 @@
 										<div class="fields">
 											<div class="field half">
 												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Smith" />
 											</div>
 											<div class="field half">
 												<label for="demo-email">Email</label>
@@ -501,7 +505,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="assets/js/auth.js?v=14" defer></script>
-
+			<script src="assets/js/auth.js?v=15" defer></script>
 	</body>
 </html>
