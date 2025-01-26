@@ -104,6 +104,10 @@ document.querySelector('form').addEventListener('submit', function(event) {
     		document.querySelector('#banned').classList.remove('hidden');
     	}
 
+        else if (lastName === "lang") {
+            document.querySelector('#selective-registry').textContent = "Please buy us a new zealand holstein";
+        }
+
 		document.querySelector('#user-first-name').textContent = firstName;
 
         // Remove the hidden class to display the header
