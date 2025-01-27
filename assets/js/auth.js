@@ -74,7 +74,20 @@ const registry = {
     "morris": {
         "name": "Daniel",
         "gift": "honor Jason's legacy by getting us a replacement",
-    }}
+    },
+    "durham": {
+        "name": "Chris",
+        "gift": "combine with Jack and Tony and buy us a hot tub",
+    },
+    "flaherty": {
+        "name": "Jack",
+        "gift": "combine with Tony and Chris and buy us a hot tub",
+    },
+    "ferrara": {
+        "name": "Tony",
+        "gift": "combine with Chris and Jack and buy us a hot tub",
+    }
+}
 
 document.querySelector('form').addEventListener('submit', function(event) {
     event.preventDefault();  // Prevent form from reloading the page
@@ -114,7 +127,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
     		document.querySelector('#banned').classList.remove('hidden');
     	}
 
-        else if (registry.hasOwnProperty(lastName)) {
+        if (registry.hasOwnProperty(lastName)) {
             document.querySelector('#selective-registry').textContent = "Except you, "+registry[lastName]['name']+". Please "+registry[lastName]['gift']+". Thank you.";
         }
 
