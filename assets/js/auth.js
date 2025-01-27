@@ -10,7 +10,11 @@ const fridayInvites = {
     "gentile": "Gentile Family",
     "marsh": "Brian",
     "guilfoil-marsh": "Rachel and Brian",
-    "connor": "Mimi and Tim"
+    "conner": "Mimi and Tim",
+    "chavez": "Mimi and Tim",
+    "chavarri": "Mimi and Tim",
+    "chavez-chavarri": "Mimi and Tim",
+    "chavez chavarri": "Mimi and Tim"
 }
 
 const saturdayInvites = {
@@ -27,6 +31,7 @@ const saturdayInvites = {
     "evans": "Anthony and Hannah",
     "ferrara": "Anthony and Hannah",
     "fitzpatrick": "Fitz and Fitz",
+    "laub": "Fitz and Fitz",
     "flaherty": "Jack",
     "green": "Shawny",
     "hancock": "Meg and Cutler",
@@ -86,6 +91,10 @@ const registry = {
     "ferrara": {
         "name": "Tony",
         "gift": "combine with Chris and Jack and buy us a hot tub",
+    },
+    "oriella": {
+        "name": "Marco",
+        "gift": "submit your resignation from Deloitte in writing so we can start our brewery",
     }
 }
 
