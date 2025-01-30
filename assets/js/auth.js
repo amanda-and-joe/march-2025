@@ -35,6 +35,7 @@ const saturdayInvites = {
     "evans": "Anthony and Hannah",
     "ferrara": "Anthony and Hannah",
     "fitzpatrick": "Fitz and Fitz",
+    "fitz": "Fitz and Fitz",
     "laub": "Fitz and Fitz",
     "flaherty": "Jack",
     "green": "Shawny",
@@ -52,11 +53,11 @@ const saturdayInvites = {
     "park": "Yool",
     "richman": "Tess",
     "riordan": "Coleman",
-    "st. Pierre": "Kaelie",
-    "st Pierre": "Kaelie",
+    "st. pierre": "Kaelie",
+    "st pierre": "Kaelie",
     "stpierre": "Kaelie",
     "suttlemyre": "Sarah",
-    "smith": "Jesse"
+    "smith": "Jessie"
 };
 
 const danceInvites = {
@@ -68,6 +69,7 @@ const danceInvites = {
 	"messer": "Morgan and Chris",
 	"fletcher": "Phoebe",
 	"ford": "Eileen",
+    "house": "Heather",
 	"cook": "Carter",
 	"griffin": "Jonathan",
 	"gregory": "Austin",
@@ -111,8 +113,12 @@ document.querySelector('form').addEventListener('submit', function(event) {
     // Check if the last name exists in the accepted names
     if (fridayInvites.hasOwnProperty(lastName)) {
 
-        document.querySelector('#main').classList.remove('hidden');
+        if (lastName === "carle" || lastName === "saules" || lastName === "paglieri" || lastName === "gentile") {
+            document.querySelector('#myreg').classList.add('hidden');
+            document.querySelector('#registry').classList.add('hidden');
+        }
 
+        document.querySelector('#main').classList.remove('hidden');
 
         const firstName = fridayInvites[lastName];
 		document.querySelector('#user-first-name').textContent = firstName;
@@ -129,7 +135,6 @@ document.querySelector('form').addEventListener('submit', function(event) {
         document.querySelector('#sorry').classList.add('hidden');
 
     } else if (saturdayInvites.hasOwnProperty(lastName)) {
-
 
         document.querySelector('#main').classList.remove('hidden');
 
