@@ -14,7 +14,11 @@ const fridayInvites = {
     "chavez": "Mimi and Tim",
     "chavarri": "Mimi and Tim",
     "chavez-chavarri": "Mimi and Tim",
-    "chavez chavarri": "Mimi and Tim"
+    "chavez chavarri": "Mimi and Tim",
+    "veal": "Laura",
+    "meade": "Laura",
+    "meade-veal": "Laura",
+    "meade veal": "Laura"
 }
 
 const saturdayInvites = {
