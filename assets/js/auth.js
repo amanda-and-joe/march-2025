@@ -113,7 +113,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
     // Check if the last name exists in the accepted names
     if (fridayInvites.hasOwnProperty(lastName)) {
 
-        if (lastName === "carle" || lastName === "saules" || lastName === "paglieri" || lastName === "gentile") {
+        if (lastName === "carle" || lastName === "saules" || lastName === "paglieri" || lastName === "gentile" || lastName == "mccawley") {
             document.querySelector('#myreg').classList.add('hidden');
             document.querySelector('#registry').classList.add('hidden');
         }
