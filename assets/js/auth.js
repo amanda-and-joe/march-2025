@@ -57,7 +57,8 @@ const saturdayInvites = {
     "st pierre": "Kaelie",
     "stpierre": "Kaelie",
     "suttlemyre": "Sarah",
-    "smith": "Jessie"
+    "smith": "Jessie",
+    "cook": "Carter"
 };
 
 const danceInvites = {
@@ -70,7 +71,6 @@ const danceInvites = {
 	"fletcher": "Phoebe",
 	"ford": "Eileen",
     "house": "Heather",
-	"cook": "Carter",
 	"griffin": "Jonathan",
 	"gregory": "Austin",
 	"waters": "Megan and McLean",
