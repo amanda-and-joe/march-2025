@@ -74,7 +74,8 @@ const danceInvites = {
 	"griffin": "Jonathan",
 	"gregory": "Austin",
 	"waters": "Megan and McLean",
-	"teems": "Megan and McLean"
+	"teems": "Megan and McLean",
+    "sherman": "Justin"
 }
 
 const registry = {
