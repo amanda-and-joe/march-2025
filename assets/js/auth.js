@@ -7,6 +7,7 @@ const fridayInvites = {
     "muftu": "Serra",
     "saules": "Amy Rose and Stu",
     "paglieri": "La famiglia Paglieri",
+    "babo natale": "La famiglia Paglieri",
     "gentile": "Gentile Family",
     "marsh": "Brian",
     "guilfoil-marsh": "Rachel and Brian",
@@ -114,10 +115,10 @@ document.querySelector('form').addEventListener('submit', function(event) {
     // Check if the last name exists in the accepted names
     if (fridayInvites.hasOwnProperty(lastName)) {
 
-        if (lastName === "carle" || lastName === "saules" || lastName === "paglieri" || lastName === "gentile" || lastName == "mccawley") {
-            document.querySelector('#myreg').classList.add('hidden');
-            document.querySelector('#registry').classList.add('hidden');
-        }
+        // if (lastName === "carle" || lastName === "saules" || lastName === "paglieri" || lastName === "gentile" || lastName == "mccawley") {
+        //     document.querySelector('#myreg').classList.add('hidden');
+        //     document.querySelector('#registry').classList.add('hidden');
+        // }
 
         document.querySelector('#main').classList.remove('hidden');
 
