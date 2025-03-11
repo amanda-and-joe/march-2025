@@ -30,7 +30,7 @@ const saturdayInvites = {
     "caputo": "Lauren and Tim",
     "fried": "Lauren and Tim",
     "clausen": "Judy and Keith",
-    "durham": "Chris and Woodrow",
+    "durham": "Chris, Eileen, and Woodrow",
     "ellis": "Marco and Emma",
     "oriella": "Marco and Emma",
     "evans": "Anthony and Hannah",
@@ -57,9 +57,13 @@ const saturdayInvites = {
     "st. pierre": "Kaelie",
     "st pierre": "Kaelie",
     "stpierre": "Kaelie",
-    "suttlemyre": "Sarah",
+    "suttlemyre": "Sarah and Harry",
     "smith": "Jessie",
-    "cook": "Carter"
+    "cook": "Carter",
+    "ford": "Chris, Eileen, and Woodrow",
+    "sternfeld": "Bob and Simone",
+    "meyenberg": "Bob and Simone",
+    "sale": "Sarah and Harry"
 };
 
 const danceInvites = {
@@ -70,7 +74,6 @@ const danceInvites = {
 	"abner": "Morgan and Chris",
 	"messer": "Morgan and Chris",
 	"fletcher": "Phoebe",
-	"ford": "Eileen",
     "house": "Heather",
 	"griffin": "Jonathan",
 	"gregory": "Austin",
